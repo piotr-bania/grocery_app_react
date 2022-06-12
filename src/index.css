@@ -1,0 +1,80 @@
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/ybu5wuq.css");
+
+/* ------------------------------ Variables ------------------------------ */
+
+:root {
+  /* Colors */
+  --accent-color: #FA4A0C;
+  --background-color: #FFFFFF;
+  --header-1: #000000;
+  --header-2: #414141;
+  --header-3: #797979;
+  --text-normal: #ACACAC;
+  --text-faded: #F1F1F1;
+
+  /* Font size */
+  --h1-size: 28px;
+  --h2-size: 24px;
+  --h3-size: 20px;
+  --text-size: 16px;
+  --link-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: auto;
+}
+
+body {
+  font-family: ff-cocon-pro, sans-serif;
+  font-weight: 300;
+  font-size: var(--text-size);
+  color: var(--light);
+  line-height: 1.4;
+  margin: 20px;
+  user-select: none;
+}
+
+/* ------------------------------ Fonts ------------------------------ */
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: 700;
+  color: var(--header-1);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: 700;
+  color: var(--header-2);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 700;
+  color: var(--header-3);
+}
+
+p {
+  font-size: var(--text-size);
+  font-weight: 300;
+  color: var(--text-normal);
+}
+
+a {
+  font-size: var(--link-size);
+  font-weight: 400;
+  color: var(--accent-color);
+}
