@@ -1,18 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Content = () => {
-    const handleNameChange = () => {
-    const names = ['Anule', 'Filho', 'Cytovscy']
-    const int = Math.floor(Math.random() * 3)
-    
-    return names[int]
+
+    const [name, setName] = useState()
+
+    const handleClick = () => {
+        console.log('You clicked it')
+    }
+
+    const handleClick2 = (e) => {
+        console.log(e.target.innerText)
     }
 
     return (
         <main>
-            <p>
-                Hello {handleNameChange()}!
-            </p>
+            <p>Items will be here</p>
+            <button onClick={handleClick}>Click It</button>
+            <button onClick={(e) => handleClick2(e)}>Click It</button>
         </main>
     )
 }
