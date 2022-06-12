@@ -1,11 +1,19 @@
 import './App.css'
-import './Header.css'
-
 import Header from './Header'
+import './Header.css'
+import Content from './Content'
+import './Content.css'
+import Footer from './Footer'
+import './Footer.css'
 
 function App() {
+
   return (
-    <Header />
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+    </div>
   )
 }
 
